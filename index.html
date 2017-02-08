@@ -1,23 +1,3 @@
-<!-- <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Finance manage tool</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  </head>
-  <body>
-    <h2>Welcome!</h2>
-    <p>Please log in to view or add transaction</p>
-    <form action="" style="width: 30%; text-align: center;">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-          <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
-          <input type="submit">
-    </form>
-    <script type="text/javascript" src="./src/js/app.js" charset="utf-8"></script>
-  </body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -25,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Finance manage tool</title>
 
     <!-- Bootstrap -->
@@ -38,21 +19,39 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <h3>Авторизация</h3>
-      <form action="" style="width: 30%; text-align: center;">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="логин" aria-describedby="basic-addon1">
-          <input type="password" class="form-control" placeholder="пароль" aria-describedby="basic-addon1">
-          <input type="submit">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>Авторизация</h4>
+        </div>
+      </div>
+      <form action="#" method="post">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6 col-lg-7">
+              <label for="login">Логин</label>
+              <input id="login" type="text" class="form-control" placeholder="логин" maxlength="60" name="login" autofocus>
+            </div>
+            <div class="col-xs-6 col-lg-7">
+              <label for="passwd">Пароль</label>
+              <input type="password" class="form-control" placeholder="пароль" maxlength="60" name="password">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-xs-6 col-lg-7">
+              <button class="btn btn-default" type="submit">Вход</button>
+            </div>
+          </div>
         </div>
       </form>
+      <a href="#">Восстановить пароль</a>
       
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="src/js/auth.js"></script>
     <script src="src/js/bootstrap.js"></script>
   </body>
 </html>

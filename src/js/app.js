@@ -1,6 +1,11 @@
 console.log("App started...");
 
+let authSuccess = require("./auth")
 let mysqlConnect = require("./db")
+
+if (authSuccess) {
+	console.log("Authorization success.")
+}
 // let http = require("http");
 
 // http.createServer((request, response) => {
