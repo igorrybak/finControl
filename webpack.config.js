@@ -4,25 +4,24 @@ module.exports = {
 
   module: {
     rules: [{
-        test: /\.ts?$/,
-        use: "awesome-typescript-loader"
-      },
-
-      {
-        enforce: "pre",
-        test: /\.js$/,
-        loader: "source-map-loader"
-      }
-    ]
+      test: /\.ts?$/,
+      use: "awesome-typescript-loader"
+    }]
   },
 
   resolve: {
-    extensions: [".ts", ".js", ".json"]
+    extensions: [".ts", ".js", ".json", ".html"]
   },
 
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist/js"
+  },
+
+  node: {
+    fs: "empty",
+    tls: "empty",
+    net: "empty"
   }
 
 };

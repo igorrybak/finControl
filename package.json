@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/js/app.js",
   "scripts": {
-    "start": "nodemon"
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -24,15 +24,13 @@
     "mysql": "^2.12.0"
   },
   "devDependencies": {
-    "@types/http-server": "^0.10.0",
     "@types/mysql": "^2.15.2",
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
-    "http-server": "^0.10.0",
-    "nodemon": "^1.14.7",
+    "source-map-loader": "^0.2.3",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
