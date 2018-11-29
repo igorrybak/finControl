@@ -1,7 +1,7 @@
 import * as dbConnect from './db';
 // import * as auth from './auth';
 
-console.log("App started...");
+console.log("App started..");
 
 
 // import * as httpServer from 'http-server';

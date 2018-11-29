@@ -1,27 +1,22 @@
 module.exports = {
   entry: "./src/ts/app.ts",
+  mode: "production",
   devtool: "source-map",
-
+  watch: true,
+  
+  output: {
+    path: "/home/igor/doc/git/finControl/dist",
+    filename: "bundle.js"    
+  },
+  
   module: {
     rules: [{
       test: /\.ts?$/,
-      use: "awesome-typescript-loader"
+      loader: "awesome-typescript-loader"
     }]
   },
-
+  
   resolve: {
     extensions: [".ts", ".js", ".json", ".html"]
-  },
-
-  output: {
-    filename: "bundle.js",
-    path: __dirname + "/dist/js"
-  },
-
-  node: {
-    fs: "empty",
-    tls: "empty",
-    net: "empty"
   }
-
 };

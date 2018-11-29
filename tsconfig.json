@@ -16,6 +16,6 @@
     "outDir": "./dist/js/"
   },
   "include": [
-    "src/ts/**/*"
+    "./src/ts/**/*"
   ]
 }
