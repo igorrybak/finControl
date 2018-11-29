@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: "./src/ts/app.ts",
   mode: "production",
@@ -5,7 +7,7 @@ module.exports = {
   watch: true,
   
   output: {
-    path: "/home/igor/doc/git/finControl/dist",
+    path: path.resolve(__dirname, 'dist'),
     filename: "bundle.js"    
   },
   
